@@ -1,19 +1,45 @@
 #!/bin/bash
 set -e
 
-echo "Pulling latest changes from git..."
+# Start time
+START_TIME=$(date +%s)
+
+echo
+echo "============================================"
+echo "🔄  Laravel Update Script"
+echo "============================================"
+echo
+
+echo "🔁 STEP 1: Pulling latest changes from git..."
+echo "--------------------------------------------"
 git pull
+echo
 
-echo "Updating Composer dependencies..."
-composer install
+echo "📦 STEP 2: Updating Composer dependencies..."
+echo "--------------------------------------------"
+composer install --no-interaction --prefer-dist --optimize-autoloader
+echo
 
-echo "Updating NPM dependencies..."
+echo "🌐 STEP 3: Updating NPM dependencies..."
+echo "--------------------------------------------"
 npm install
+echo
 
-echo "Running migrations..."
-php artisan migrate
+echo "📂 STEP 4: Running migrations..."
+echo "--------------------------------------------"
+php artisan migrate --force
+echo
 
-echo "Compiling assets..."
+echo "⚡ STEP 5: Compiling assets..."
+echo "--------------------------------------------"
 npm run build
+echo
 
-echo "Update complete!"
+# End time
+END_TIME=$(date +%s)
+DURATION=$((END_TIME - START_TIME))
+
+echo
+echo "✅ DONE: Laravel update completed successfully!"
+echo "🕒 Completed in $DURATION seconds"
+echo "============================================"
