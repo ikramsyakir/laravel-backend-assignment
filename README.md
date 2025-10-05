@@ -75,7 +75,15 @@ You can now visit the app in your browser by visiting [https://laravel-backend-a
 
    * [app/Services/PasswordGeneratorService.php](app/Services/PasswordGeneratorService.php)
    * [app/Console/Commands/PasswordGenerator.php](app/Console/Commands/PasswordGenerator.php)
+
+        **Results:**
+        ![Password-Generate](public/img/password-generate-command.png)
+   
    * [app/Http/Controllers/PasswordGenerateController.php](app/Http/Controllers/PasswordGenerateController.php) `Add header: Accept: application/json`
+
+     **Results:**
+
+     ![Password-Generate-API](public/img/password-generate-api.png)
 
 2. Build a simple automatic pizza ordering program.
    * Small pizza: RM15
