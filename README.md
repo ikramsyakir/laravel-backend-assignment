@@ -98,5 +98,13 @@ You can now visit the app in your browser by visiting [https://laravel-backend-a
 
    * [app/Services/PizzaOrderService.php](app/Services/PizzaOrderService.php)
    * [app/Console/Commands/PizzaOrder.php](app/Console/Commands/PizzaOrder.php)
+
+        **Results:**
+        ![Pizza-Order](public/img/pizza-order-command.png)
+
    * [app/Http/Controllers/PizzaOrderController.php](app/Http/Controllers/PizzaOrderController.php) `Add header: Accept: application/json`
+
+     **Results:**
+
+     ![Pizza-Order-API](public/img/pizza-order-api.png)
 
