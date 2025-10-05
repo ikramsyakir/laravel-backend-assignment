@@ -67,3 +67,12 @@ To update the project:
     ```
 
 You can now visit the app in your browser by visiting [https://laravel-backend-assignment.test](https://laravel-backend-assignment.test).
+
+## Assignment Questions
+
+1. Write a password generator which is able to have small, capital letters, numbers, symbols and minimum length. The generator can customize it such as small, capital letters, numbers and minimum length or all above. Symbols: `['!', '#', '$', '%', '&', '(', ')', '*', '+', '@', '^']`. **Print out the password.**
+
+
+   * [app/Services/PasswordGeneratorService.php](app/Services/PasswordGeneratorService.php)
+   * [app/Console/Commands/PasswordGenerator.php](app/Console/Commands/PasswordGenerator.php)
+   * [app/Http/Controllers/PasswordGenerateController.php](app/Http/Controllers/PasswordGenerateController.php)
