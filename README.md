@@ -87,7 +87,8 @@ You can now visit the app in your browser by visiting [https://laravel-backend-a
 
     Based on an user’s order, work out their final bill.
 
-* [app/Services/PizzaOrderService.php](app/Services/PizzaOrderService.php)
-* [app/Console/Commands/PizzaOrder.php](app/Console/Commands/PizzaOrder.php)
-* [app/Http/Controllers/PizzaOrderController.php](app/Http/Controllers/PizzaOrderController.php) `Add header: Accept: application/json`
+
+   * [app/Services/PizzaOrderService.php](app/Services/PizzaOrderService.php)
+   * [app/Console/Commands/PizzaOrder.php](app/Console/Commands/PizzaOrder.php)
+   * [app/Http/Controllers/PizzaOrderController.php](app/Http/Controllers/PizzaOrderController.php) `Add header: Accept: application/json`
 
