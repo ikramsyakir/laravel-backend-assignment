@@ -75,4 +75,19 @@ You can now visit the app in your browser by visiting [https://laravel-backend-a
 
    * [app/Services/PasswordGeneratorService.php](app/Services/PasswordGeneratorService.php)
    * [app/Console/Commands/PasswordGenerator.php](app/Console/Commands/PasswordGenerator.php)
-   * [app/Http/Controllers/PasswordGenerateController.php](app/Http/Controllers/PasswordGenerateController.php)
+   * [app/Http/Controllers/PasswordGenerateController.php](app/Http/Controllers/PasswordGenerateController.php) `Add header: Accept: application/json`
+
+2. Build a simple automatic pizza ordering program.
+   * Small pizza: RM15
+   * Medium pizza: RM22
+   * Large pizza: RM30
+   * Pepperoni for small pizza: +RM3
+   * Pepperoni for medium pizza: +RM5
+   * Extra cheese for any size pizza: +RM6
+
+    Based on an user’s order, work out their final bill.
+
+* [app/Services/PizzaOrderService.php](app/Services/PizzaOrderService.php)
+* [app/Console/Commands/PizzaOrder.php](app/Console/Commands/PizzaOrder.php)
+* [app/Http/Controllers/PizzaOrderController.php](app/Http/Controllers/PizzaOrderController.php) `Add header: Accept: application/json`
+
