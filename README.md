@@ -9,6 +9,22 @@ The following tools are required in order to start the installation.
 
 ## 🚀 Installation
 
+To install the application, follow these steps:
+
+**Option 1: Using script (recommended)**
+
+Run this command in your terminal:
+```shell
+./scripts/install.sh
+```
+
+To update the project:
+```shell
+./scripts/update.sh
+```
+
+**Option 2: Manual installation**
+
 1. Clone the repository with `git clone`
 2. Copy __.env.example__ file to __.env__ and edit database credentials there
 
@@ -51,5 +67,3 @@ The following tools are required in order to start the installation.
     ```
 
 You can now visit the app in your browser by visiting [https://laravel-backend-assignment.test](https://laravel-backend-assignment.test).
-
-If you seeded the database you can login into a test account with **`superadmin@app.com`** & **`password`**.
